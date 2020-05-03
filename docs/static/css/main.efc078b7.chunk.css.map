@@ -1,0 +1,1 @@
+{"version":3,"sources":["App.module.css"],"names":[],"mappings":"AAAA,MACE,WACF,CAMA,iCACE,oBAA8B,CAA9B,6BACF","file":"main.efc078b7.chunk.css","sourcesContent":[":root {\n  --color: red;\n}\n\n.root {\n  background-color: var(--color);\n}\n\n.red {\n  background-color: var(--color);\n}\n"]}
