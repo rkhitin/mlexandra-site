@@ -1,6 +1,10 @@
 :root {
-  /* Should be save as ANIMATION_TIMEOUT in components */
-  --animation-timeout: 300ms;
+  /* Should be same as ENTER_ANIMATION_TIMEOUT in component */
+  --enter-animation-timeout: 500ms;
+
+  /* In sum should be save as EXIT_ANIMATION_TIMEOUT in component */
+  --exit-animation-timeout: 300ms;
+  --exit-animation-delay: 100ms;
 }
 
 .curtain {
@@ -9,7 +13,7 @@
   right: 0;
   top: 0;
   bottom: 0;
-  background-color: var(--switch-curtain-color);
+  background-color: var(--primary-color);
   transform: translateY(-100vh);
 }
 
@@ -18,8 +22,8 @@
 }
 
 .enterActive.curtain {
-  transition: transform var(--animation-timeout);
   transform: translateY(0vh);
+  transition: transform 500ms ease-out;
 }
 
 .exit.curtain {
@@ -28,6 +32,7 @@
 }
 
 .exitActive.curtain {
-  transition: transform var(--animation-timeout);
   transform: translateY(-100vh);
+  transition: transform 300ms ease-in;
+  transition-delay: 100ms;
 }

@@ -5,8 +5,13 @@ import { CSSTransition } from 'react-transition-group'
 
 import styles from 'src/components/SwitchAnimation/SwitchAnimation.module.css'
 
-// Should be same as --animation-timeout in styles
-const ANIMATION_TIMEOUT = 300
+// Should be same as --enter-animation-timeout in styles
+const ENTER_ANIMATION_TIMEOUT = 500
+// Should be same as sum of --exit-animation-timeout
+// and --exit-animation-delay in styles
+const EXIT_ANIMATION_TIMEOUT = 400
+
+const fullAnimationTimeout = ENTER_ANIMATION_TIMEOUT + EXIT_ANIMATION_TIMEOUT
 
 const SwitchAnimation = () => {
   const [isAnimationStart, setIsAnimationStart] = useState(false)
@@ -18,7 +23,7 @@ const SwitchAnimation = () => {
 
       setTimeout(() => {
         setIsAnimationStart(false)
-      }, ANIMATION_TIMEOUT)
+      }, fullAnimationTimeout)
     },
     [pathname]
   )
@@ -26,7 +31,10 @@ const SwitchAnimation = () => {
   return (
     <CSSTransition
       in={isAnimationStart}
-      timeout={ANIMATION_TIMEOUT}
+      timeout={{
+        enter: ENTER_ANIMATION_TIMEOUT,
+        exit: EXIT_ANIMATION_TIMEOUT,
+      }}
       classNames={styles}
     >
       <div className={styles.curtain} />
