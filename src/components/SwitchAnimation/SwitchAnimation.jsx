@@ -11,8 +11,6 @@ const ENTER_ANIMATION_TIMEOUT = 500
 // and --exit-animation-delay in styles
 const EXIT_ANIMATION_TIMEOUT = 400
 
-const fullAnimationTimeout = ENTER_ANIMATION_TIMEOUT + EXIT_ANIMATION_TIMEOUT
-
 const SwitchAnimation = () => {
   const [isAnimationStart, setIsAnimationStart] = useState(false)
   const { pathname } = useLocation()
@@ -23,7 +21,7 @@ const SwitchAnimation = () => {
 
       setTimeout(() => {
         setIsAnimationStart(false)
-      }, fullAnimationTimeout)
+      }, ENTER_ANIMATION_TIMEOUT)
     },
     [pathname]
   )

@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.ce811f3c.chunk.css",
-    "main.js": "/static/js/main.4e96dd38.chunk.js",
-    "main.js.map": "/static/js/main.4e96dd38.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.4d8fe0c7.js",
-    "runtime-main.js.map": "/static/js/runtime-main.4d8fe0c7.js.map",
-    "static/css/2.764ccc25.chunk.css": "/static/css/2.764ccc25.chunk.css",
-    "static/js/2.264df182.chunk.js": "/static/js/2.264df182.chunk.js",
-    "static/js/2.264df182.chunk.js.map": "/static/js/2.264df182.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.6541432aea9e135c18c101884fc47d32.js": "/precache-manifest.6541432aea9e135c18c101884fc47d32.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.764ccc25.chunk.css.map": "/static/css/2.764ccc25.chunk.css.map",
-    "static/css/main.ce811f3c.chunk.css.map": "/static/css/main.ce811f3c.chunk.css.map",
-    "static/js/2.264df182.chunk.js.LICENSE.txt": "/static/js/2.264df182.chunk.js.LICENSE.txt"
+    "main.css": "/mlexandra-site/static/css/main.404975ba.chunk.css",
+    "main.js": "/mlexandra-site/static/js/main.20a566f4.chunk.js",
+    "main.js.map": "/mlexandra-site/static/js/main.20a566f4.chunk.js.map",
+    "runtime-main.js": "/mlexandra-site/static/js/runtime-main.1b425f42.js",
+    "runtime-main.js.map": "/mlexandra-site/static/js/runtime-main.1b425f42.js.map",
+    "static/css/2.764ccc25.chunk.css": "/mlexandra-site/static/css/2.764ccc25.chunk.css",
+    "static/js/2.d6fd56d3.chunk.js": "/mlexandra-site/static/js/2.d6fd56d3.chunk.js",
+    "static/js/2.d6fd56d3.chunk.js.map": "/mlexandra-site/static/js/2.d6fd56d3.chunk.js.map",
+    "index.html": "/mlexandra-site/index.html",
+    "precache-manifest.a221bdf807773ea44bd200a14251f9d0.js": "/mlexandra-site/precache-manifest.a221bdf807773ea44bd200a14251f9d0.js",
+    "service-worker.js": "/mlexandra-site/service-worker.js",
+    "static/css/2.764ccc25.chunk.css.map": "/mlexandra-site/static/css/2.764ccc25.chunk.css.map",
+    "static/css/main.404975ba.chunk.css.map": "/mlexandra-site/static/css/main.404975ba.chunk.css.map",
+    "static/js/2.d6fd56d3.chunk.js.LICENSE.txt": "/mlexandra-site/static/js/2.d6fd56d3.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.4d8fe0c7.js",
+    "static/js/runtime-main.1b425f42.js",
     "static/css/2.764ccc25.chunk.css",
-    "static/js/2.264df182.chunk.js",
-    "static/css/main.ce811f3c.chunk.css",
-    "static/js/main.4e96dd38.chunk.js"
+    "static/js/2.d6fd56d3.chunk.js",
+    "static/css/main.404975ba.chunk.css",
+    "static/js/main.20a566f4.chunk.js"
   ]
 }

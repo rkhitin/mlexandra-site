@@ -23,7 +23,7 @@
 
 .enterActive.curtain {
   transform: translateY(0vh);
-  transition: transform 500ms ease-out;
+  transition: transform var(--enter-animation-timeout) ease-out;
 }
 
 .exit.curtain {
@@ -33,6 +33,6 @@
 
 .exitActive.curtain {
   transform: translateY(-100vh);
-  transition: transform 300ms ease-in;
-  transition-delay: 100ms;
+  transition: transform var(--exit-animation-timeout) ease-in;
+  transition-delay: var(--exit-animation-delay);
 }
