@@ -1,0 +1,33 @@
+:root {
+  /* Should be save as ANIMATION_TIMEOUT in components */
+  --animation-timeout: 300ms;
+}
+
+.curtain {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: var(--switch-curtain-color);
+  transform: translateY(-100vh);
+}
+
+.enter.curtain {
+  display: block;
+}
+
+.enterActive.curtain {
+  transition: transform var(--animation-timeout);
+  transform: translateY(0vh);
+}
+
+.exit.curtain {
+  display: block;
+  transform: translateY(0vh);
+}
+
+.exitActive.curtain {
+  transition: transform var(--animation-timeout);
+  transform: translateY(-100vh);
+}

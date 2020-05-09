@@ -1,0 +1,5 @@
+body {
+  background-color: var(--base-background-color);
+  color: var(--base-font-color);
+  font-family: 'Red Hat Text', sans-serif;
+}

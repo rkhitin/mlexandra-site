@@ -2,10 +2,11 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
 
-import styles from './App.module.css'
+import styles from 'src/App.module.css'
 
-import Page1 from './pages/Page1'
-import Page2 from './pages/Page2'
+import Page1 from 'src/pages/Page1'
+import Page2 from 'src/pages/Page2'
+import SwitchAnimation from 'src/components/SwitchAnimation/SwitchAnimation'
 
 function App() {
   return (
@@ -50,6 +51,8 @@ function App() {
           </a>
         </header>
       </div>
+
+      <SwitchAnimation />
     </Router>
   )
 }
