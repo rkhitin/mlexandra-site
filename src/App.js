@@ -7,6 +7,7 @@ import styles from 'src/App.module.css'
 import Page1 from 'src/pages/Page1'
 import Page2 from 'src/pages/Page2'
 import SwitchAnimation from 'src/components/SwitchAnimation/SwitchAnimation'
+import NoiseBackground from 'src/components/NoiseBackground/NoiseBackground'
 
 function App() {
   return (
@@ -53,6 +54,7 @@ function App() {
       </div>
 
       <SwitchAnimation />
+      <NoiseBackground />
     </Router>
   )
 }
