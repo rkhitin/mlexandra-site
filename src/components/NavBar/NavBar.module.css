@@ -1,0 +1,47 @@
+:root {
+  --link-margin: 24px;
+  --negative-link-margin: -24px;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  margin: 0 var(--negative-link-margin);
+}
+
+.link {
+  display: flex;
+  color: var(--base-font-color);
+  font-size: var(--nav-font-size);
+  text-decoration: none;
+  margin: 0 var(--link-margin);
+}
+
+.dot {
+  width: 24px;
+  height: 24px;
+  background-color: var(--base-font-color);
+  border-radius: 50%;
+}
+
+.linksHovered {
+  color: var(--inactive-font-color);
+}
+
+.linksHovered .dot {
+  background-color: var(--inactive-font-color);
+}
+
+.linksHovered:hover {
+  color: var(--base-font-color);
+}
+
+.linksHovered:hover .dot {
+  background-color: var(--base-font-color);
+}
+
+.activeLink {
+  text-decoration: underline;
+}

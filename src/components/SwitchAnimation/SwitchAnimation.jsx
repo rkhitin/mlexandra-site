@@ -15,6 +15,9 @@ const SwitchAnimation = () => {
   const [isAnimationStart, setIsAnimationStart] = useState(false)
   const { pathname } = useLocation()
 
+  // TODO: remove
+  return null;
+
   useEffect(
     () => () => {
       setIsAnimationStart(true)

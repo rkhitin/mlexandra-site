@@ -1,6 +1,10 @@
 :root {
   --base-background-color: #ecece8;
+
   --base-font-color: #2c2c2c;
+  --inactive-font-color: #cccccc;
 
   --primary-color: #ffd32a;
+
+  --nav-font-size: 24px;
 }
