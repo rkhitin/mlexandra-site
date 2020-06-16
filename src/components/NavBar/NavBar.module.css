@@ -3,6 +3,11 @@
   --negative-link-margin: -24px;
 }
 
+.root {
+  display: flex;
+  justify-content: space-between;
+}
+
 .list {
   list-style-type: none;
   padding: 0;

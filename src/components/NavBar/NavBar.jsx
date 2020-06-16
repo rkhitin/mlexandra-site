@@ -4,28 +4,33 @@ import classNames from 'classnames'
 
 import styles from './NavBar.module.css'
 
-const links = [
+const leftLinksGroup = [
   {
     content: <div className={styles.dot} />,
     url: '/',
     id: 'home',
   },
   {
-    content: 'about',
-    url: '/page1',
-    id: 'about',
-  },
-  {
     content: 'recent projects',
-    url: '/page3',
+    url: '/',
     id: 'projects',
   },
   {
     content: 'get in touch',
-    url: '/page2',
+    url: '/',
     id: 'getin',
   },
 ]
+
+const rightLinksGroup = [
+  {
+    content: 'about',
+    url: '/page1',
+    id: 'about',
+  },
+]
+
+const linksGroups = [leftLinksGroup, rightLinksGroup]
 
 const NavBar = () => {
   const [isLinksHovered, setIsLinksHovered] = useState(false)
@@ -34,26 +39,28 @@ const NavBar = () => {
   const onMouseOut = () => setIsLinksHovered(false)
 
   return (
-    <nav>
-      <ul className={styles.list}>
-        {links.map(({ content, url, id }) => (
-          <li key={id}>
-            <NavLink
-              to={url}
-              className={classNames(styles.link, {
-                [styles.linksHovered]: isLinksHovered,
-              })}
-              activeClassName={classNames({
-                [styles.activeLink]: id === 'about',
-              })}
-              onMouseOver={onMouseOver}
-              onMouseOut={onMouseOut}
-            >
-              {content}
-            </NavLink>
-          </li>
-        ))}
-      </ul>
+    <nav className={styles.root}>
+      {linksGroups.map((linkGroup) => (
+        <ul className={styles.list}>
+          {linkGroup.map(({ content, url, id }) => (
+            <li key={id}>
+              <NavLink
+                to={url}
+                className={classNames(styles.link, {
+                  [styles.linksHovered]: isLinksHovered,
+                })}
+                activeClassName={classNames({
+                  [styles.activeLink]: id === 'about',
+                })}
+                onMouseOver={onMouseOver}
+                onMouseOut={onMouseOut}
+              >
+                {content}
+              </NavLink>
+            </li>
+          ))}
+        </ul>
+      ))}
     </nav>
   )
 }
