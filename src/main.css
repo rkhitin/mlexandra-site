@@ -4,3 +4,9 @@ body {
   font-family: 'Red Hat Text', sans-serif;
   padding: 60px;
 }
+
+@media (max-width: 768px) {
+  body {
+    padding: 24px;
+  }
+}

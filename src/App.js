@@ -1,15 +1,15 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 import styles from 'src/App.module.css'
 
 import Page1 from 'src/pages/Page1'
 import Page2 from 'src/pages/Page2'
 import Page3 from 'src/pages/Page3'
-import SwitchAnimation from 'src/components/SwitchAnimation/SwitchAnimation'
-import NoiseBackground from 'src/components/NoiseBackground/NoiseBackground'
-import NavBar from 'src/components/NavBar/NavBar'
+import SwitchAnimation from 'src/components/SwitchAnimation'
+import NoiseBackground from 'src/components/NoiseBackground'
+import NavBar from 'src/components/NavBar'
 
 function App() {
   return (
@@ -30,6 +30,24 @@ function App() {
             <Page1 />
           </Route>
           <Route path="/">
+            <h2>home</h2>
+            <h2>home</h2>
+            <h2>home</h2>
+            <h2>home</h2>
+            <h2>home</h2>
+            <h2>home</h2>
+            <h2>home</h2>
+            <h2>home</h2>
+            <h2>home</h2>
+            <h2>home</h2>
+            <h2>home</h2>
+            <h2>home</h2>
+            <h2>home</h2>
+            <h2>home</h2>
+            <h2>home</h2>
+            <h2>home</h2>
+            <h2>home</h2>
+            <h2>home</h2>
             <h2>home</h2>
           </Route>
         </Switch>

@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom'
 import { CSSTransition } from 'react-transition-group'
 
-import styles from 'src/components/SwitchAnimation/SwitchAnimation.module.css'
+import styles from './styles.module.css'
 
 // Should be same as --enter-animation-timeout in styles
 const ENTER_ANIMATION_TIMEOUT = 500
@@ -16,7 +16,7 @@ const SwitchAnimation = () => {
   const { pathname } = useLocation()
 
   // TODO: remove
-  return null;
+  return null
 
   useEffect(
     () => () => {

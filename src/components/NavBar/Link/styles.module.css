@@ -1,34 +1,9 @@
-:root {
-  --link-margin: 24px;
-  --negative-link-margin: -24px;
-}
-
-.root {
-  display: flex;
-  justify-content: space-between;
-}
-
-.list {
-  list-style-type: none;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  margin: 0 var(--negative-link-margin);
-}
-
 .link {
   display: flex;
   color: var(--base-font-color);
   font-size: var(--nav-font-size);
   text-decoration: none;
   margin: 0 var(--link-margin);
-}
-
-.dot {
-  width: 24px;
-  height: 24px;
-  background-color: var(--base-font-color);
-  border-radius: 50%;
 }
 
 .linksHovered {

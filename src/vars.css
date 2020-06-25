@@ -3,8 +3,11 @@
 
   --base-font-color: #2c2c2c;
   --inactive-font-color: #cccccc;
+  --invert-font-color: #ffffff;
 
   --primary-color: #ffd32a;
 
   --nav-font-size: 24px;
+
+  --md-bp: 768px;
 }
