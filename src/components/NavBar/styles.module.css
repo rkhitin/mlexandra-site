@@ -12,7 +12,7 @@
 }
 
 .menuPlaceholder {
-  height: 32px;
+  height: 24px;
 }
 
 .fullScreenOpen {
@@ -46,7 +46,7 @@
 .hamburgerWrapper {
   display: none;
   align-items: center;
-  height: 32px;
+  height: 16px;
   margin-right: var(--link-margin);
 }
 
@@ -73,7 +73,7 @@
 }
 
 .hamburgerActive {
-  transform: rotate(45deg);
+  transform: rotate(45deg) translateY(7px);
   background-color: var(--invert-font-color);
 }
 
@@ -90,12 +90,21 @@
   opacity: 1;
   transition: opacity 300ms, transform 300ms;
 }
+
 .alertExit {
   opacity: 1;
 }
+
 .alertExitActive {
   opacity: 0;
   transition: opacity 300ms, transform 300ms;
+}
+
+.links {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
 }
 
 @media (max-width: 768px) {

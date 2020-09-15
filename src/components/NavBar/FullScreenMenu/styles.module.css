@@ -6,3 +6,48 @@
   top: 0;
   bottom: 0;
 }
+
+.content {
+  padding: var(--body-padding-for-mobile);
+  padding-top: 55px;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.links {
+  list-style-type: none;
+  padding: 0;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.firstMenuItem {
+  margin-bottom: 40px;
+}
+
+.link {
+  color: var(--invert-font-color);
+  font-size: var(--full-screen-nav-font-size);
+  text-decoration: none;
+}
+
+.link:first-child {
+  margin-bottom: 40px;
+}
+
+.label {
+  font-size: 20px;
+  color: var(--invert-font-color);
+  opacity: 0.45;
+}
+
+.email {
+  font-size: var(--full-screen-nav-font-size);
+  color: var(--invert-font-color);
+  text-decoration: none;
+  margin-bottom: 24px;
+}

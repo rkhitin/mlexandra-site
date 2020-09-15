@@ -1,12 +1,9 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import classNames from 'classnames'
 import { CSSTransition } from 'react-transition-group'
 
 import FullScreenMenu from 'src/components/NavBar/FullScreenMenu'
-import Links from 'src/components/NavBar/Links'
 import Link from 'src/components/NavBar/Link'
-
-import { desktopLinksGroups } from './data'
 
 import styles from './styles.module.css'
 
@@ -17,6 +14,17 @@ const NavBar = () => {
   const onHamburgerClick = () => setIsFullScreenMenuOpen(!isFullScreenMenuOpen)
   const onMouseOver = () => setIsLinksHovered(true)
   const onMouseOut = () => setIsLinksHovered(false)
+
+  useEffect(() => {
+    const bodyClassList = document.querySelector('body').classList
+
+    if (isFullScreenMenuOpen) {
+      window.scrollTo(0, 0)
+      bodyClassList.add('modal-is-open')
+    } else {
+      bodyClassList.remove('modal-is-open')
+    }
+  }, [isFullScreenMenuOpen])
 
   return (
     <>
@@ -38,15 +46,44 @@ const NavBar = () => {
           <div
             className={classNames(styles.desktopTopMenu, styles.linksWrapper)}
           >
-            {desktopLinksGroups.map((linkGroup, index) => (
-              <Links
-                key={index}
-                linkGroup={linkGroup}
-                isLinksHovered={isLinksHovered}
-                onMouseOut={onMouseOut}
-                onMouseOver={onMouseOver}
-              />
-            ))}
+            <ul className={styles.links}>
+              <li>
+                <Link
+                  url="/"
+                  id="projects"
+                  isLinksHovered={isLinksHovered}
+                  onMouseOver={onMouseOver}
+                  onMouseOut={onMouseOut}
+                >
+                  recent projects
+                </Link>
+              </li>
+              <li>
+                <Link
+                  url="/"
+                  id="getin"
+                  isLinksHovered={isLinksHovered}
+                  onMouseOver={onMouseOver}
+                  onMouseOut={onMouseOut}
+                >
+                  get in touch
+                </Link>
+              </li>
+            </ul>
+
+            <ul className={styles.links}>
+              <li>
+                <Link
+                  url="/page1"
+                  id="about"
+                  isLinksHovered={isLinksHovered}
+                  onMouseOver={onMouseOver}
+                  onMouseOut={onMouseOut}
+                >
+                  about
+                </Link>
+              </li>
+            </ul>
           </div>
         </div>
 

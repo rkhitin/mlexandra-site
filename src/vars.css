@@ -1,4 +1,7 @@
 :root {
+  --body-padding: 60px;
+  --body-padding-for-mobile: 24px;
+
   --base-background-color: #ecece8;
 
   --base-font-color: #2c2c2c;
@@ -8,6 +11,7 @@
   --primary-color: #ffd32a;
 
   --nav-font-size: 24px;
+  --full-screen-nav-font-size: 48px;
 
   --md-bp: 768px;
 }

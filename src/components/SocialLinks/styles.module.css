@@ -1,0 +1,13 @@
+.root {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.icon {
+  height: 24px;
+  color: var(--invert-font-color);
+  fill: currentColor;
+}

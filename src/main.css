@@ -2,11 +2,15 @@ body {
   background-color: var(--base-background-color);
   color: var(--base-font-color);
   font-family: 'Red Hat Text', sans-serif;
-  padding: 60px;
+  padding: var(--body-padding);
+}
+
+body.modal-is-open {
+  overflow: hidden;
 }
 
 @media (max-width: 768px) {
   body {
-    padding: 24px;
+    padding: var(--body-padding-for-mobile);
   }
 }
